@@ -1,0 +1,30 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(512 488) rotate(90) scale(620)">
+      <stop stop-color="#1236B5"/>
+      <stop offset="0.45" stop-color="#081B72"/>
+      <stop offset="1" stop-color="#050E4A"/>
+    </radialGradient>
+    <linearGradient id="bubble" x1="290" y1="770" x2="785" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D55FF"/>
+      <stop offset="0.45" stop-color="#278CFF"/>
+      <stop offset="1" stop-color="#63D8F6"/>
+    </linearGradient>
+    <filter id="glow" x="180" y="145" width="665" height="710" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+    <filter id="soft" x="300" y="285" width="430" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#06195D" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bgGlow)"/>
+  <circle cx="512" cy="505" r="300" fill="#2E8EFF" opacity="0.24" filter="url(#glow)"/>
+  <path d="M512 205C346.315 205 212 337.886 212 501.8C212 604.51 264.482 695.17 344.201 748.394C352.16 753.707 355.735 763.329 353.711 772.681C344.181 816.743 331.046 847.442 319.166 868.681C313.268 879.225 322.985 891.36 334.57 887.999C382.703 874.032 424.439 853.229 460.252 827.724C466.532 823.251 474.451 821.795 481.95 823.366C491.743 825.417 501.789 826.8 512 826.8C677.685 826.8 812 693.914 812 530C812 366.086 677.685 205 512 205Z" fill="url(#bubble)"/>
+  <g filter="url(#soft)" fill="#FFFFFF">
+    <rect x="350" y="463" width="44" height="90" rx="22"/>
+    <rect x="430" y="416" width="44" height="184" rx="22"/>
+    <rect x="490" y="360" width="44" height="296" rx="22"/>
+    <rect x="550" y="416" width="44" height="184" rx="22"/>
+    <rect x="630" y="463" width="44" height="90" rx="22"/>
+  </g>
+</svg>

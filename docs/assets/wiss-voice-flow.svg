@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="28" fill="#08090C"/>
+  <circle cx="865" cy="312" r="210" fill="#1C8F59" fill-opacity=".12"/>
+  <circle cx="865" cy="312" r="145" fill="#A3FFC0" fill-opacity=".15"/>
+  <ellipse cx="865" cy="312" rx="116" ry="76" fill="url(#core)"/>
+  <ellipse cx="865" cy="312" rx="174" ry="116" stroke="#A3FFC0" stroke-opacity=".42"/>
+  <ellipse cx="865" cy="312" rx="212" ry="142" stroke="#A3FFC0" stroke-opacity=".2"/>
+  <path d="M802 312C825 287 848 337 870 312C892 287 916 337 938 312" stroke="#0E3B23" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="105" cy="102" r="22" fill="#A3FFC0"/><text x="96" y="111" fill="#102116" font-family="Georgia" font-size="28" font-style="italic">w</text>
+  <text x="143" y="110" fill="#F0F4EF" font-family="Arial, sans-serif" font-size="30" font-weight="700">Wiss</text>
+  <text x="105" y="225" fill="#A3FFC0" font-family="monospace" font-size="13" letter-spacing="3">LOCAL-FIRST DICTATION FOR MAC</text>
+  <text x="105" y="310" fill="#F0F4EF" font-family="Arial, sans-serif" font-size="70" font-weight="700">Say it.</text>
+  <text x="105" y="382" fill="#A3FFC0" font-family="Georgia" font-size="70" font-style="italic">Ship it.</text>
+  <text x="105" y="450" fill="#AAB4AD" font-family="Arial, sans-serif" font-size="21">Private voice-to-text, right where your cursor is.</text>
+  <rect x="105" y="500" width="255" height="50" rx="25" fill="#A3FFC0"/><text x="131" y="532" fill="#102116" font-family="Arial, sans-serif" font-size="16" font-weight="700">ON-DEVICE • PRIVATE</text>
+  <defs><radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="translate(835 282) rotate(48) scale(164 224)" gradientUnits="userSpaceOnUse"><stop stop-color="#E9FFEE"/><stop offset=".28" stop-color="#A3FFC0"/><stop offset="1" stop-color="#19834D"/></radialGradient></defs>
+</svg>

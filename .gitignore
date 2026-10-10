@@ -1,0 +1,18 @@
+node_modules/
+out/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+resources/models/*
+!resources/models/.gitkeep
+!resources/models/README.md
+build/icon.iconset/
+.claude/
+.claude-flow/
+.github/workflows/
+
+# Local ML runtime binary; retained locally, distributed outside Git.
+resources/mlx-runner/_internal/mlx/lib/mlx.metallib

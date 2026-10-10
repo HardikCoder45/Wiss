@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050715" />
+    <meta name="description" content="Wiss is private, multilingual voice typing powered by Whisper Large V3 on your Mac." />
+    <meta property="og:title" content="Wiss — speak, then keep moving" />
+    <meta property="og:description" content="Local voice typing for macOS. Hold Option, speak, and Wiss types where your cursor is." />
+    <title>Wiss — local voice typing for Mac</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="nav shell">
+      <a class="brand" href="#top" aria-label="Wiss home"><img src="/logo.svg" alt="" width="38" height="38" /><span>Wiss</span></a>
+      <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#local">Under the hood</a><a href="#privacy">Privacy</a></nav>
+      <a class="nav-cta" href="https://github.com/HardikCoder45/Wiss">Get Wiss <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="content">
+      <section class="hero shell" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow intro"><i></i> Voice typing that stays on your Mac</p>
+          <h1 class="intro">Speak.<br /><em>Keep moving.</em></h1>
+          <p class="hero-text intro">Hold Option, talk naturally, and Wiss types into the field you already selected. Whisper Large V3 handles the words locally.</p>
+          <div class="hero-actions intro">
+            <a class="button button-primary" href="https://github.com/HardikCoder45/Wiss">Get Wiss for Mac <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="#how"><span class="play" aria-hidden="true">▶</span> See the flow</a>
+          </div>
+          <div class="proof intro" aria-label="Product highlights"><span><b>4-bit</b> Whisper Large V3</span><span><b>Local</b> audio processing</span><span><b>Auto</b> language detection</span></div>
+        </div>
+
+        <div class="voice-stage intro" aria-hidden="true">
+          <canvas id="voice-core"></canvas>
+          <div class="core-halo"></div>
+          <div class="core-label"><span>VOICE ENGINE</span><strong>Listening</strong><small>MLX · ON DEVICE</small></div>
+          <div class="orbit orbit-one"><i></i><span>audio in</span></div>
+          <div class="orbit orbit-two"><i></i><span>text out</span></div>
+          <div class="status-card status-top"><span class="status-light"></span><div><small>Wiss is ready</small><strong>Hold <kbd>⌥</kbd> to speak</strong></div></div>
+          <div class="status-card status-bottom"><span class="status-check">✓</span><div><small>Inserted locally</small><strong>Meet me at six.</strong></div></div>
+        </div>
+        <div class="scroll-cue intro"><span>SCROLL TO FOLLOW THE SIGNAL</span><i></i></div>
+      </section>
+
+      <section class="signal-strip" aria-label="Wiss capabilities"><div class="signal-track"><span>WHISPER LARGE V3</span><i>●</i><span>APPLE MLX</span><i>●</i><span>PRIVATE BY DESIGN</span><i>●</i><span>MULTILINGUAL</span><i>●</i><span>WHISPER LARGE V3</span><i>●</i><span>APPLE MLX</span><i>●</i><span>PRIVATE BY DESIGN</span><i>●</i><span>MULTILINGUAL</span><i>●</i></div></section>
+
+      <section class="flow shell section" id="how">
+        <div class="section-copy reveal">
+          <p class="section-index">01 / THE FLOW</p>
+          <h2>Your cursor<br />never loses you.</h2>
+          <p>Wiss waits in the menu bar. Hold Option when a thought arrives, speak, then release. The transcript lands in the app you were already using.</p>
+          <ol class="flow-steps">
+            <li class="is-active"><b>01</b><span><strong>Hold Option</strong><small>The recording bar settles at the bottom of your screen.</small></span></li>
+            <li><b>02</b><span><strong>Speak naturally</strong><small>Wiss detects the language and follows your phrasing.</small></span></li>
+            <li><b>03</b><span><strong>Release to type</strong><small>Your words appear at the active cursor.</small></span></li>
+          </ol>
+        </div>
+        <div class="product-demo reveal" aria-label="A visual demonstration of Wiss typing into a note">
+          <div class="demo-chrome"><span></span><span></span><span></span><small>Project brief.txt</small><b>•••</b></div>
+          <div class="demo-body"><span class="demo-tag">WRITING WITH WISS</span><p>Move the launch review to Friday,</p><p>then send the new brief to Maya<span class="cursor"></span></p><div class="recording-pill"><span class="mini-logo"><i></i><i></i><i></i><i></i><i></i></span><span class="live-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><time>00:07</time></div></div>
+          <div class="demo-foot"><span><i></i> Processing on this Mac</span><span>⌥ release to insert</span></div>
+        </div>
+      </section>
+
+      <section class="engine section" id="local"><div class="shell">
+        <div class="section-heading reveal"><p class="section-index">02 / UNDER THE HOOD</p><h2>A serious model.<br /><em>Right here.</em></h2><p>The model downloads once, then runs on your machine. Apple Silicon uses MLX and Metal so transcription stays close to the microphone and away from a server.</p></div>
+        <div class="engine-grid">
+          <article class="engine-card engine-main reveal"><div class="chip-visual" aria-hidden="true"><div class="chip-core"><img src="/logo.svg" alt="" /></div><i></i><i></i><i></i><i></i></div><span class="card-kicker">LOCAL MODEL</span><h3>Whisper Large V3<br />in 4-bit.</h3><p>High-quality multilingual transcription in a smaller local footprint.</p></article>
+          <article class="engine-card reveal"><span class="card-kicker">MAC ACCELERATION</span><div class="metric"><strong>MLX</strong><span>METAL GPU</span></div><p>Wiss uses Apple's MLX path on Apple Silicon and keeps the model warm between recordings.</p><div class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="engine-card reveal" id="privacy"><span class="card-kicker">DATA PATH</span><div class="privacy-mark"><span>YOUR MAC</span><i></i></div><h3>Audio stays local.</h3><p>No account is required for dictation. Once the model is installed, transcription works offline.</p></article>
+        </div>
+      </div></section>
+
+      <section class="language section shell"><div class="language-copy reveal"><p class="section-index">03 / SPEAK AS YOU ARE</p><h2>Change languages.<br />Don't change settings.</h2><p>Wiss detects the language in each recording. Start in English, continue in Hindi, or dictate the Spanish sentence you need now.</p></div><div class="language-wheel reveal" aria-label="Automatic language detection supports many languages"><div class="lang-center"><img src="/logo.svg" alt="" /><span>AUTO</span></div><span style="--i:0">EN</span><span style="--i:1">HI</span><span style="--i:2">DE</span><span style="--i:3">FR</span><span style="--i:4">ES</span><span style="--i:5">JA</span><span style="--i:6">PT</span><span style="--i:7">+90</span></div></section>
+
+      <section class="final shell section" id="download"><div class="final-glow" aria-hidden="true"></div><img class="final-logo reveal" src="/logo.svg" alt="Wiss" /><p class="eyebrow reveal"><i></i> Ready when the thought is</p><h2 class="reveal">Less typing.<br /><em>More finished.</em></h2><p class="reveal">Wiss runs quietly in the background and appears only while you hold Option.</p><a class="button button-primary reveal" href="https://github.com/HardikCoder45/Wiss">Get Wiss on GitHub <span aria-hidden="true">↗</span></a><small class="reveal">macOS · Apple Silicon · Local after setup</small></section>
+    </main>
+
+    <footer class="shell"><a class="brand" href="#top"><img src="/logo.svg" alt="" width="34" height="34" /><span>Wiss</span></a><p>Voice typing that stays on your Mac.</p><div><a href="https://github.com/HardikCoder45/Wiss">GitHub</a><span>© 2026 OmniX</span></div></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

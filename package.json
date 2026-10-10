@@ -1,0 +1,58 @@
+{
+  "name": "omnix-wiss",
+  "version": "0.1.0",
+  "description": "OmniX Wiss — private, local, multilingual push-to-talk dictation powered by Whisper Large v3.",
+  "productName": "OmniX Wiss",
+  "author": "OmniX",
+  "license": "UNLICENSED",
+  "main": "./out/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "npm run typecheck",
+    "model:verify": "node scripts/verify-whisper-runtime.mjs",
+    "icons": "node scripts/generate-icons.mjs",
+    "electron:install": "node node_modules/electron/install.js",
+    "pack:mac": "npm run build && electron-builder -c electron-builder.config.cjs --mac dmg --arm64",
+    "pack:mac:x64": "npm run build && electron-builder -c electron-builder.config.cjs --mac dmg --x64",
+    "pack:win": "npm run build && electron-builder -c electron-builder.config.cjs --win nsis --x64",
+    "preflight:mac": "node scripts/preflight-release.mjs mac",
+    "preflight:win": "node scripts/preflight-release.mjs win",
+    "dist:mac": "node scripts/build-release.mjs mac",
+    "dist:win": "node scripts/build-release.mjs win",
+    "verify:mac": "node scripts/verify-macos-artifact.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "uiohook-napi": "1.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "electron": "43.3.0",
+    "electron-builder": "26.15.3",
+    "electron-vite": "5.0.0",
+    "typescript": "6.0.3",
+    "vite": "7.3.6",
+    "vitest": "4.1.10"
+  },
+  "allowScripts": {
+    "uiohook-napi@1.5.5": true,
+    "onnxruntime-node@1.24.3": true,
+    "sharp@0.35.3": true,
+    "protobufjs@7.6.5": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true
+  },
+  "overrides": {
+    "adm-zip": "0.6.0",
+    "sharp": "0.35.3"
+  },
+  "optionalDependencies": {
+    "@img/sharp-win32-x64": "^0.35.3"
+  }
+}
