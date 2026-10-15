@@ -3,8 +3,10 @@
 > **Private, local voice-to-text for macOS.**
 
 <p align="center">
-  <img src="docs/assets/wiss-voice-flow.svg" alt="Wiss — local-first dictation for Mac" width="100%" />
+  <img src="public/logo.svg" alt="OmniX Wiss logo" width="180" />
 </p>
+
+> The OmniX Wiss logo is the application brand used in the packaged macOS app, replacing the previous workflow illustration so the README matches the product.
 
 Wiss is a fast, local-first alternative to cloud dictation apps such as Wispr Flow. Hold one shortcut, speak naturally, and the transcription is inserted where your cursor is—without sending recordings to a cloud service.
 
